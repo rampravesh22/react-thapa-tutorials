@@ -1,10 +1,9 @@
-const btn = document.querySelector("button");
-console.log(btn);
+import DigitalClock from "./DigitalClock";
+
 function App() {
 	return (
 		<>
-			<h1>Welcome</h1>
-			
+			<DigitalClock></DigitalClock>
 		</>
 	);
 }

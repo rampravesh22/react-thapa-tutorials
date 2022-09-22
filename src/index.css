@@ -21,3 +21,12 @@ body{
     display: grid;
     place-content: center;
 }
+.form-input{
+    margin-top:1rem ;
+    margin-bottom:1rem ;
+}
+input{
+    padding: .6rem;
+    border-radius: 1rem;
+    border:2p solid rgb(100, 99, 99);
+}

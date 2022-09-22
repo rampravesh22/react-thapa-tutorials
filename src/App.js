@@ -1,11 +1,10 @@
-import React from 'react'
-import LoginForm from './LoginForm';
+import React from "react";
+import LoginForm from "./LoginForm";
 function App() {
 	return (
 		<>
 			{/* Componenents */}
-            <LoginForm></LoginForm>
-			
+			<LoginForm></LoginForm>
 		</>
 	);
 }

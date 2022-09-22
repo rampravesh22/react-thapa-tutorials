@@ -14,3 +14,8 @@ html {
 	/* 1rem = 10px*/
 	font-size: 62.5%;
 }
+
+body{
+    background-color: rgba(3, 204, 137, 0.295);
+    min-height: 100vh;
+}

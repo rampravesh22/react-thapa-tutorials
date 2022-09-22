@@ -1,9 +1,8 @@
-const btn = document.querySelector("button");
-console.log(btn);
+import React from 'react'
 function App() {
 	return (
 		<>
-			<h1>Welcome</h1>
+			{/* Componenents */}
 			
 		</>
 	);

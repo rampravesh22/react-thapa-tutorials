@@ -14,3 +14,37 @@ html {
 	/* 1rem = 10px*/
 	font-size: 62.5%;
 }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: antiquewhite;
+    flex-direction: column;
+}
+
+button{
+    background-color: purple;
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 1rem;
+    border: 2px solid white;
+    margin: auto;
+    cursor: pointer;
+    align-self: center;
+
+}
+
+button:active{
+    background-color: black;
+}
+h1{
+    margin-bottom:2rem ;
+    font-size: 3rem;
+}
+#root{
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    flex-direction:column ;
+}

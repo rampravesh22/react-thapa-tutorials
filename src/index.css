@@ -1,21 +1,50 @@
 :root {
-	--color-primary: #2584ff;
+    --color-primary: #2584ff;
 }
 
 *,
 *::after,
 *::before {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-	/* 1rem = 10px*/
-	font-size: 62.5%;
+    /* 1rem = 10px*/
+    font-size: 62.5%;
 }
 
-body{
-    background-color: rgba(3, 204, 137, 0.295);
+body {
+    background-color: rgb(92, 13, 126);
     min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.form-input {
+    margin: 2rem 0;
+}
+
+.container {
+    /* border:2px solid black; */
+    box-shadow: -3px -3px 15px black;
+    border-radius: 1rem;
+    padding: 4rem;
+
+}
+
+input {
+    padding: .8rem 1.6rem;
+
+}
+h1{
+    color:white;
+}
+
+input[type=submit] {
+    background-color: rgb(231, 230, 231);
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    cursor: pointer;
 }

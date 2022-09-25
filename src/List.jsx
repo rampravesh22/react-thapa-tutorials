@@ -3,7 +3,7 @@ import React from "react";
 const List = (props) => {
 	return (
 		<li>
-			{props.key}{props.text}
+			{props.text}
 			<button className="delete-btn" onClick={() => {
             props.onSelect(props.id)
          }}>

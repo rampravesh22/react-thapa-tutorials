@@ -1,21 +1,98 @@
 :root {
-	--color-primary: #2584ff;
+   --color-primary: #2584ff;
 }
 
 *,
 *::after,
 *::before {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
 
 html {
-	/* 1rem = 10px*/
-	font-size: 62.5%;
+   /* 1rem = 10px*/
+   font-size: 62.5%;
 }
 
-body{
-    background-color: rgba(3, 204, 137, 0.295);
-    min-height: 100vh;
+html * {
+   font-size: 2rem;
+}
+
+body {
+   background-color: rgba(3, 204, 137, 0.295);
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+}
+
+.container {
+   /* background-color: rgb(124, 14, 226); */
+   width: 400px;
+   /* height: 300px; */
+   padding: 2rem;
+   /* border: 2px solid black; */
+   display: grid;
+   place-content: center;
+}
+
+input {
+   padding: 1rem;
+   border-radius: 1rem;
+   outline: none;
+   border: none;
+   box-shadow: 2px 2px 4px black inset;
+}
+
+.add-btn {
+   margin-top: 2rem;
+   width: 10rem;
+   padding: 1rem;
+   background-color: rgb(17, 247, 63);
+   border: none;
+   box-shadow: 1px 1px 5px black;
+   border-radius: .3rem;
+   cursor: pointer;
+}
+
+.add-btn:hover {
+   background-color: rgb(2, 173, 36);
+   transition: all .3s;
+
+
+
+}
+
+.item-container {
+   background-color: antiquewhite;
+   width: 100%;
+   padding: 1rem 3rem;
+
+   min-height: 20rem;
+   margin-bottom: 1rem;
+   box-shadow: 3px 3px 10px black;
+}
+
+.list-cotainer {
+   /* background-color: #2584ff; */
+   display: flex;
+   justify-content: space-between;
+   padding: 1rem;
+}
+
+.delete-btn {
+   background-color: rgb(255, 0, 0);
+   color: white;
+   padding: .5rem 1.4rem;
+   outline: none;
+   border: none;
+   cursor: pointer;
+   font-size: 10px;
+   border-radius: .3rem;
+   box-shadow: 1px 1px 5px black;
+   transition: all .3s;
+}
+
+.delete-btn:hover {
+   background-color: rgb(171, 7, 7);
 }

@@ -19,3 +19,7 @@ body{
     background-color: rgba(3, 204, 137, 0.295);
     min-height: 100vh;
 }
+
+html * {
+   font-size: 3rem;
+}

@@ -15,7 +15,78 @@ html {
 	font-size: 62.5%;
 }
 
-body{
-    background-color: rgba(3, 204, 137, 0.295);
-    min-height: 100vh;
+body {
+	background-color: rgba(3, 204, 137, 0.295);
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#root {
+	border: 2px solid black;
+	min-height: 90vh;
+	width: 80%;
+	background-color: antiquewhite;
+	padding: 2rem;
+}
+
+input {
+	padding: 0.7rem;
+	margin-left: 1rem;
+}
+
+
+
+.note {
+   /* background-color: aquamarine; */
+	font-size: 2rem;
+	display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-content: flex-start;
+   gap: 1rem;
+   padding: 1rem;
+   border:3px solid black;
+   min-height: 300px;
+	margin-top: 2rem;
+}
+
+.child {
+	padding: 1rem;
+	border: 2px solid salmon;
+	display: flex;
+   position: relative;
+	justify-content: space-around;
+   transition:all 2s ease-in-out;
+	background-color: white;
+}
+
+.delete{
+   position: absolute;
+   background-color: rgb(250, 37, 37);
+   color: white;
+   padding: .3rem 1rem;
+   display: none;
+   right: 0;
+   border-radius: 1rem;
+   cursor: pointer;
+}
+
+
+.child:hover .delete{
+   display: block;
+}
+.add{
+   padding: .5rem 2rem;
+   margin-left: 2rem;
+
+}
+
+.child p {
+	display: inline-block;
+}
+
+span {
+	font-weight: bold;
 }

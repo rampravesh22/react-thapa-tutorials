@@ -15,7 +15,18 @@ html {
 	font-size: 62.5%;
 }
 
+
 body{
     background-color: rgba(3, 204, 137, 0.295);
     min-height: 100vh;
+}
+#root{
+   width: 80%;
+   margin: auto;
+   background-color: aliceblue;
+   padding: 2rem;
+   min-height: 100vh;
+}
+html * {
+   font-size: 2rem;
 }

@@ -15,18 +15,99 @@ html {
 	font-size: 62.5%;
 }
 
-
-body{
-    background-color: rgba(3, 204, 137, 0.295);
-    min-height: 100vh;
+body {
+	background-color: rgba(3, 204, 137, 0.295);
+	min-height: 100vh;
 }
-#root{
-   width: 80%;
-   margin: auto;
-   background-color: aliceblue;
-   padding: 2rem;
-   min-height: 100vh;
+#root {
+	width: 80%;
+	margin: auto;
+	background-color: aliceblue;
+	padding: 2rem;
+	min-height: 100vh;
 }
 html * {
-   font-size: 2rem;
+	font-size: 2rem;
+}
+
+.nav_bar {
+	background-color: blueviolet;
+	display: flex;
+	overflow: hidden;
+	justify-content: flex-end;
+	padding: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+li {
+	list-style: none;
+	margin: 0 2rem;
+	color: white;
+	/* background-color: red; */
+	padding: 0.5rem 1rem;
+	border-radius: 1rem;
+	position: relative;
+	z-index: 10;
+}
+a{
+   padding: .5rem 1rem;
+   border-radius: .2rem;
+}
+li:hover::after {
+	content: "";
+	position: absolute;
+	width: 2rem;
+	height: 0.3rem;
+	background-color: aliceblue;
+	rotate: 90deg;
+	left: 50%;
+   transition: all 1s;
+	z-index: 2;
+	translate: -50% 0;
+	top: -10px;
+}
+a:hover{
+
+   background-color: rgba(255, 0, 0, 0.693);
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+hr{
+   background-color: black;
+   border:2px solid rgb(0, 0, 0);
+   margin: .3rem 0;
+
+}
+.contact{
+   background-color: #2583ffab;
+   padding: 2rem;
+   position: relative;
+   /* color: white; */
+}
+
+
+.contact h1{
+   font-size: 3rem;
+}
+.about{
+   background-color: #ff25c1ab;
+   padding: 2rem;
+   /* color: white; */
+}
+
+.about h1{
+   font-size: 3rem;
+}
+.home{
+   background-color: #8eff9bab;
+   padding: 2rem;
+   /* color: white; */
+}
+
+.home h1{
+   font-size: 3rem;
 }

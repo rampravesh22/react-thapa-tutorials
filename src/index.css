@@ -12,21 +12,50 @@
 
 html {
 	/* 1rem = 10px*/
+   font-family: poppins;
 	font-size: 62.5%;
 }
-
-
-body{
-    background-color: rgba(3, 204, 137, 0.295);
-    min-height: 100vh;
-}
-#root{
-   width: 80%;
-   margin: auto;
-   background-color: aliceblue;
-   padding: 2rem;
-   min-height: 100vh;
-}
-html * {
+html *{
    font-size: 2rem;
+}
+li{
+   list-style: none;
+}
+a{
+   color: white;
+   text-decoration: none;
+}
+.nav-bar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgb(26, 26, 44);
+   padding: 2rem ;
+}
+.nav-bar__link{
+   display: flex;
+   margin-right: 1rem;
+   gap:3rem;
+}
+.active{
+   color: aqua;
+}
+.nav-bar__logo{
+   color: white;
+   font-size: 3rem;
+}
+
+@media (0<width<600px) {
+   .nav-bar__logo{
+      align-self: flex-start;
+   }
+   .nav-bar{
+      
+      flex-direction: column;
+   }
+   .nav-bar__link{
+      flex-direction: column;
+      justify-content: center;
+   }
+   
 }

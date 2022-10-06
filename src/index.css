@@ -14,6 +14,9 @@ html {
 	/* 1rem = 10px*/
 	font-size: 62.5%;
 }
+html li{
+   list-style:none;
+}
 
 
 body{
@@ -30,3 +33,33 @@ body{
 html * {
    font-size: 2rem;
 }
+.routes{
+   background-color: rgb(35, 29, 48) !important;
+   min-height: 20rem;
+   display: flex;
+   justify-content: center;
+   margin-top: 1rem;
+   flex-direction: column;
+   align-items: center;
+   color: white;
+ }
+ a{
+   text-decoration: none;
+ }
+.nav-bar__ul{
+   display: flex;
+   font-size: 3rem;
+   /* background-color: #2584ff; */
+   width: 70%;
+   justify-content: space-around;
+}
+ .routes div{
+   font-size: 4rem;
+ }
+ .active{
+   background-color: rgb(30, 35, 35);
+   padding: .5rem 1.4rem;
+   color: white;
+   border-radius: .5rem;
+   
+ }

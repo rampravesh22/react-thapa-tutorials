@@ -1,32 +1,10 @@
-:root {
-	--color-primary: #2584ff;
+.nav_bg{
+   background-color: white !important;
+}
+.active{
+   color: red !important;
 }
 
-*,
-*::after,
-*::before {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
-html {
-	/* 1rem = 10px*/
-	font-size: 62.5%;
-}
-
-
-body{
-    background-color: rgba(3, 204, 137, 0.295);
-    min-height: 100vh;
-}
-#root{
-   width: 80%;
-   margin: auto;
-   background-color: aliceblue;
-   padding: 2rem;
-   min-height: 100vh;
-}
-html * {
-   font-size: 2rem;
+.activate{
+   background-color: red !important;
 }

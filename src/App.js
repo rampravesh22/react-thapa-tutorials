@@ -16,15 +16,20 @@ function App() {
 			}
 		};
 		getAllStudent();
-	});
+	},[]);
+	console.log(students)
 	return (
 		<>
-			<h1>Connect django with react </h1>
+			<h1 style={{textAlign:"center",margin:"1rem 0"}}>Connect django with react </h1>
 
 			<div className="container">{students.map((student) => {
 				return(
 					<>
-						<h1>{student.name}</h1>
+						<div className="student">
+							<h1>Name: {student.name}</h1>
+							<h1>Roll: {student.roll}</h1>
+							<h1>City: {student.city}</h1>
+						</div>
 					</>
 				)
 			})}</div>

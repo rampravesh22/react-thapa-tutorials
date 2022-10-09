@@ -14,36 +14,37 @@ html {
 	/* 1rem = 10px*/
 	font-size: 62.5%;
 }
-#root{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
+
+body {
+	background-color: rgba(3, 204, 137, 0.295);
+	min-height: 100vh;
 }
-table{
-   width: 400px;
-}
-
-table,thead,tbody,td,th{
-   border:2px solid black;
-   text-align: center;
-   border-collapse: collapse;
-}
-
-
-
-
-body{
-    background-color: rgba(3, 204, 137, 0.295);
-    min-height: 100vh;
-}
-#root{
-   width: 80%;
-   margin: auto;
-   background-color: aliceblue;
-   padding: 2rem;
-   min-height: 100vh;
+#root {
+	/* width: 80%; */
+	margin: auto;
+	background-color: aliceblue;
+	padding: 2rem;
+   display: grid;
+   place-content: center;
+	min-height: 100vh;
 }
 html * {
-   font-size: 2rem;
+	font-size: 2rem;
+}
+.container {
+	/* background-color: #2584ff; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+   max-width: 60rem;
+}
+.student {
+	flex: 1 1 200px;
+	border: 2px solid black;
+   padding: 1rem;
+   background-color: rgb(44, 38, 31);
+   color: white;
+   border-radius: 1rem;
 }

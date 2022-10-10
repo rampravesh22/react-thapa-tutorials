@@ -2,9 +2,9 @@
    background-color: white !important;
 }
 .active{
-   color: red !important;
+   /* font-weight: bold; */
+   color: black !important;
+   font-weight: bold;
 }
 
-.activate{
-   background-color: red !important;
-}
+
